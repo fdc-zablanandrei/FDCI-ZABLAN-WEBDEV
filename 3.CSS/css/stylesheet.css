@@ -1,5 +1,9 @@
 /*My CSS Style Sheet*/
 
+html {
+	font-family: Verdana, Tahoma, sans-serif; 
+} 
+
 #top {
 	font-family: Verdana;
 	padding: 10px;
@@ -43,7 +47,6 @@ li:hover{
 #main{
 	margin-left: 250px;
 	width: 950px;
-	border: 1px solid #555;
 }
 
 .colorbuttons{
