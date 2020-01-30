@@ -1,0 +1,47 @@
+/*My CSS Style Sheet for personal webpage*/
+
+html {
+	font-family: Verdana, Tahoma, sans-serif; 
+} 
+
+.wrapper{
+	background-color: light-grey;
+}
+
+.container{
+	display:block;
+	width: 150%;
+}
+
+
+ul {
+	margin: 0;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+li {
+	float: left;
+	display: block;
+	color:#000;
+	width:60px;
+	padding-bottom: 8px;
+	text-align: center;
+	margin-bottom: 3px;
+	background-color: #fff;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 70% auto;
+	margin-left: 10px;
+}
+
+
+li a:hover{
+	box-shadow: 0 0 0 5px rgba(#000,.4) , 0 0 0 10px  #f05f75;
+}
+
+li img{
+	max-width: 100%;
+	height: auto;
+}
