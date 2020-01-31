@@ -4,20 +4,56 @@ html {
 	font-family: Verdana, Tahoma, sans-serif; 
 } 
 
+.upper_body{
+height: 80%;
+width:100%;
+background-color: lightblue;
+}
+
+.lower_body{
+
+}
+
+
+
 .wrapper{
-	background-color: light-grey;
+	background-color: lightgrey;
 }
 
 .container{
-	display:block;
-	width: 150%;
+	position:absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	margin: auto;
+	width: 50vw; height: 50vh;
+
 }
 
+#profile_image{
+	display: table-cell;
+	float: left;
+	margin-right: 10px;
+}
+
+#content_body{
+	margin-left: 27px;
+	float: left;
+	
+}
+
+#socialmedia_bar{
+	display: table-cell;
+	margin-left: 10px;
+	float:left;
+	padding: 31px;
+	margin-left: -367px;
+	margin-top: 28%;
+}
 
 ul {
-	margin: 0;
+	margin-top: 9%;
 	list-style-type: none;
 	overflow: hidden;
+	display: table-row;
 }
 
 li {
