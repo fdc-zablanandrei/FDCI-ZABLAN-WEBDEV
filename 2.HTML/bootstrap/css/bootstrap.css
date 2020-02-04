@@ -240,6 +240,7 @@ th {
   h2,
   h3 {
     page-break-after: avoid;
+
   }
   .navbar {
     display: none;
@@ -1122,7 +1123,8 @@ img {
 .carousel-inner > .item > a > img {
   display: block;
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
+  max-height: 500px;
 }
 .img-rounded {
   border-radius: 6px;

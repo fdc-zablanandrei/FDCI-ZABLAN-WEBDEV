@@ -4,80 +4,15 @@ html {
 	font-family: Verdana, Tahoma, sans-serif; 
 } 
 
-.upper_body{
-height: 80%;
-width:100%;
-background-color: lightblue;
-}
 
-.lower_body{
-
-}
-
-
-
-.wrapper{
-	background-color: lightgrey;
-}
-
-.container{
-	position:absolute;
-	top: 0; bottom: 0; left: 0; right: 0;
-	margin: auto;
-	width: 50vw; height: 50vh;
+.col-md-3{
+  border: 1px solid;
+    padding: 10px;
+  box-shadow: 5px 10px;
+  margin-left: 8.3%;
 
 }
+.col-md-3 p{
 
-#profile_image{
-	display: table-cell;
-	float: left;
-	margin-right: 10px;
-}
-
-#content_body{
-	margin-left: 27px;
-	float: left;
-	
-}
-
-#socialmedia_bar{
-	display: table-cell;
-	margin-left: 10px;
-	float:left;
-	padding: 31px;
-	margin-left: -367px;
-	margin-top: 28%;
-}
-
-ul {
-	margin-top: 9%;
-	list-style-type: none;
-	overflow: hidden;
-	display: table-row;
-}
-
-li {
-	float: left;
-	display: block;
-	color:#000;
-	width:60px;
-	padding-bottom: 8px;
-	text-align: center;
-	margin-bottom: 3px;
-	background-color: #fff;
-	border-radius: 50%;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 70% auto;
-	margin-left: 10px;
-}
-
-
-li a:hover{
-	box-shadow: 0 0 0 5px rgba(#000,.4) , 0 0 0 10px  #f05f75;
-}
-
-li img{
-	max-width: 100%;
-	height: auto;
+	font: 17px Tahoma, sans-serif;
 }
