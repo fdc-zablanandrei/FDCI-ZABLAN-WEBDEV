@@ -1,15 +1,26 @@
 /*My CSS Style Sheet for personal webpage*/
 
+
+
 html {
 	font-family: Verdana, Tahoma, sans-serif; 
+	scroll-behavior: smooth;
 } 
 
+.jumbotron{
+}
 
+
+.carousel-inner img{
+
+	margin: auto;
+}
 .col-md-3{
   border: 1px solid;
-    padding: 10px;
+  padding: 10px;
   box-shadow: 5px 10px;
-  margin-left: 8.3%;
+  margin-left: 6.2%;
+  background-color: lightyellow;
 
 }
 .col-md-3 p{
