@@ -23,7 +23,7 @@
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About Me</a></li>
 				<li><a href="#interests">Interests</a></li>
-				<li><a href="#">Contact Me</a></li>
+				<li><a href="#contactme">Contact Me</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -63,7 +63,7 @@
 		</div>
 	</div>
 
-	<section class="jumbotron container">
+	<section class="jumbotron container-fluid">
 		<div class="container">
 			<h1 align="center">About Me</h1>
 			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -134,8 +134,44 @@
 			<div class="gallery-item wide"><img src="Images/HereToSlay/hts1.jpg"></div>
 		</div>
 	</section>
+
+	<div id="contactme" class="row container-fluid blocktitle" style="background-color: black; margin-bottom: 3%">
+		<h1 align="center" style="color: white;"><strong>CONTACT ME</strong></h1>
+	</div>
+
+
+	<section class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="contact-image">
+					<div class="contact-image-item large"><img src="Images/manga.jpg"></div>
+				</div>
+			</div>
+			<div class="col-md-6"><h2>Contact Me</h2>
+				<form>
+					<div class="form-group">
+
+						<label for="fname">First Name</label>
+						<input type="text" class="form-control" id="fname" name="firstname" placeholder="Your name..">
+						<label for="lname">Last Name</label>
+						<input type="text" class="form-control" id="lname" name="lastname" placeholder="Your last name..">
+						
+						<label for="emailform">Email Address</label>
+						<input type="email" class="form-control" id="emailform" placeholder="email@address.com">
+						
+						<label for="subject">Subject</label>
+						<textarea id="subject" class="form-control" name="subject" placeholder="Write something.." style="height:108px"></textarea>
+
+						<input type="submit" value="Submit">
+					</div>
+				</form>
+				
+
+			</div>
+		</div>
+	</section>
 	<hr>
-	<footer class="navbar navbar-default navbar-inverse container-fluid">
+	<footer class="navbar-inverse container-fluid">
 		<div id="socialmedia_bar">
 			<ul>
 <!-- 				<li><a href="#"><img src="Images/Facebook.png"></a></li>
@@ -143,12 +179,12 @@
 <li><a href="#"><img src="Images/Github.png"></a></li>
 <li><a href="#"><img src="Images/Instagram.png"></a></li>
 <li><a href="#"><img src="Images/Linkedin.png"></a></li> -->
-			</ul>
-		</div>
-		<p>&copy; 2020 YurillygottaPage, Inc.</p>
-	</footer>
-	<script type="text/javascript" src="bootstrap/js/jquery.js"></script>
-	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+</ul>
+</div>
+<p>&copy; 2020 YurillygottaPage, Inc.</p>
+</footer>
+<script type="text/javascript" src="bootstrap/js/jquery.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 </body>
 </html>
 
