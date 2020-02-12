@@ -45,15 +45,16 @@ function finalgrade() {
 // Part 3 of Javascript Activity
 function beepboop(){
 	var x;
-	for (x=1 ; x<=15; x++){
-		console.log(x);
-		
-		if ((x%3 != 0) && (x%5 !=0)) {
+	for (x=1 ; x<=100; x++){
+		if (x%3!=0 && x%5!=0){
 			console.log(x)
-		} else if(x%5 ==0) {
-			console.log (x +' boop')
+		} else if (x%3==0 && x%5==0){
+			console.log(x+ ' beepboop')
+		} else if (x%5==0){
+			console.log(x+ ' boop')
+		} else  if (x%3==0){
+			console.log(x+ ' beep')
 		}
-
 	}
 }
 
