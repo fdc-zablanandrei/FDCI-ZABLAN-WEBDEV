@@ -58,3 +58,15 @@ function beepboop(){
 	}
 }
 
+function loopchar(){
+	var p;
+	var o;
+	var s = parseInt(document.getElementById("rown").value);
+	for (p=1; p<=s; p++){
+		for (o=1; o<=p; o++){
+			document.write('*');
+		}
+		document.write('<br>');
+	}
+
+}
