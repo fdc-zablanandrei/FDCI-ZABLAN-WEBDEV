@@ -58,6 +58,8 @@ function beepboop(){
 	}
 }
 
+//Bonus JS Activty
+
 function loopchar(){
 	var p;
 	var o;
