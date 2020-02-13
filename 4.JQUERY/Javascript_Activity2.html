@@ -8,34 +8,66 @@
 	<title>JavaScript Activity</title>
 </head>
 <body>
-
+	<nav class="navbar navbar-default navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">JAVASCRIPT ACTIVITY 2
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Me</a></li>
+				<li><a href="#interests">Interests</a></li>
+				<li><a href="#contactme">Contact Me</a></li>
+			</ul>
+		</div>
+	</nav>
 
 	<section class="container" >
+		<h2>JS Activity Part 2.1</h2>
+		<div class="row">
+			<div class="col-md-12"><h4>Get the longest word</h4>
+				<div class="row">
+					<div class="col-md-3"><label for="words">Input phrases or sentences</label>
+					</div>
+					<div class="col-md-9">
+						<input type="text" name="words" id="strings" class="form-control">
+					</div>
+					<div class="col-md-6">
+						<button id="stringlength" onclick="stringLength()">Get the word</button>
+						<br>
+						<p id="prime"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
 		<h2>JS Activity Part 2.2</h2>
 		<div class="row">
 			<div class="col-md-12"><h4>Is it a Prime number?</h4>
 				<div class="row">
-					<div class="col-md-3"><strong>Enter a number</strong>
+					<div class="col-md-3"><label for="number">Enter a number</label>
 					</div>
 					<div class="col-md-9">
-						<input type="text" name="numb" id="number">
+						<input type="text" name="number" id="number" class="form-control">
 					</div>
 					<div class="col-md-6">
 						<button id="finalg" onclick="isPrime()">Is it?</button>
 						<br>
-						<p id="mins"></p>
+						<p id="prime"></p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<h2>JS Activity Part 2.3</h2>
-		<div class="row">
+		<div class="row">	
 			<div class="col-md-12"><h4>Hour to Minutes Converter</h4>
 				<div class="row">
-					<div class="col-md-3"><strong>How long does it take in hours?</strong>
+					
+					<div class="col-md-3"><label>How long does it take in hours?</label>
 					</div>
 					<div class="col-md-9">
-						<input type="text" name="hr" id="hour">
+						<input type="text" name="hour" id="hour" class="form-control">
 					</div>
 					<div class="col-md-6">
 						<button id="finalg" onclick="hourToMin()">To Minutes</button>
