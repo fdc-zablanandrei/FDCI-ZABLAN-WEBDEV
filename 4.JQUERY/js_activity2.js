@@ -15,7 +15,7 @@ function stringLength(){
 		}      
 	
 	} 
-	console.log(longest);
+	alert("Longest word is "+longest);
 }
 
 
@@ -34,12 +34,12 @@ function isPrime(){
 
 	}
 	if (num==1){
-		console.log(num + ' is not prime')
+		alert(num + ' is not prime')
 	}	
 	else if (nonprime ==0){
-		console.log(num + ' is prime')
+		alert(num + ' is prime')
 	} else {
-		console.log(num+ ' is not prime')
+		alert(num+ ' is not prime')
 	}
 }
 
@@ -50,5 +50,5 @@ function hourToMin(){
 	var hour = parseInt(document.getElementById("hour").value);
 	min = hour * 60;
 	console.log(min);
-	document.getElementById("mins").textContent = "It'll take "+min +" minutes";
+	alert("It'll take "+min +" minutes");
 }
