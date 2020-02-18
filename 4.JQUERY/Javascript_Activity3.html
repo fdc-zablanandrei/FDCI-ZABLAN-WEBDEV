@@ -8,7 +8,7 @@
 	<title>JavaScript Activity 3</title>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-inverse">
+	<nav class="navbar navbar-default navbar-inverse">
 		<div class="container">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="#">JAVASCRIPT ACTIVITY 3
@@ -22,18 +22,51 @@
 			</div>
 		</nav>
 
-<section class="container">
-	<h2>JS Activity 3.1</h2>
-	<form onsubmit="nameAndAge()">
-		<div class="form-row">
-		<label for="name">Name</label>
-		<input type="text" name="name" id="userName" class="form-control">
-		<label for="age">Age</label>
-		<input type="text" name="age" id="userAge" class="form-control">
-		</div>
-	</form>
+		<section class="container">
+			<h2>JS Activity 3.1</h2>
+			<form class="form-inline" onsubmit="nameAndAge(e)">
+				<div class="form-row">
+					<label for="name">Name:</label>
+					<input type="text" name="name" id="userName" class="form-control">
+					<label for="age">Age:</label>
+					<input type="text" name="age" id="userAge" class="form-control">
 
-</section>
+					<button type="submit" class="btn btn-default" id="submit">Submit</button>
+				</div>
+				<br>
+				<div id="msg">
+					<pre></pre>
+				</div>
+
+				<div id="read">
+					<pre></pre>
+				</div>
+			</form>
+		</section>
+
+		<article class="container">
+			<h2>JS Activity 3.2</h2>
+			<form class="form-row" onsubmit="nameAndAge(e)">
+				<div>
+					<label for="name">Name:</label>
+					<input type="text" name="name" id="itemName" class="form-control">
+					<label for="stock">Stock:</label>
+					<input type="number" name="stock" id="itemStock" class="form-control">
+					<label for="price">Price:</label>
+					<input type="number" name="price" id="itemStock" class="form-control">
+					<button type="submit" class="btn btn-default" id="submit">Submit</button>
+				</div>
+				<br>
+				<div id="list">
+					<pre></pre>
+				</div>
+				<button type="submit" class="btn btn-default" id="add">Add</button>
+				<div id="tally">
+					<pre></pre>
+				</div>
+			</form>
+
+		</article>
 
 
 
@@ -44,12 +77,10 @@
 
 
 
-
-
-
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script type="text/javascript" src="js_activity3.js"></script>
 		<script type="text/javascript" src="../2.HTML/bootstrap/js/jquery.js"></script>
 		<script type="text/javascript" src="../2.HTML/bootstrap/js/bootstrap.js"></script>
-</body>
-</html>
+	</body>
+	</html>
