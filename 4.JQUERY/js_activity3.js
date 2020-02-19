@@ -26,10 +26,10 @@ pre.innerHTML=JSON.stringify(nameList);
 var text = "";
 let readable = document.querySelector('#read pre');
 for (let x = 0; x<nameList.length; x++){
-	    
-		text += (`Name: ${nameList[x].Name} , Age: ${nameList[x].Age} `, '\n');
-	}
-	readable.HTML(nameList);
+
+	text+=`Name:${nameList[x].Name} , Age: ${nameList[x].Age} ` + '\n';
+}
+readable.innerText=(text);
 }
 /*for (let x = 0; x<nameList.length; x++){
 	if(x == 0 || x == (nameList.length-1)){
@@ -45,9 +45,9 @@ for (let x = 0; x<nameList.length; x++){
 //JS activity 3.1
 
 $('#form2').on('submit', itemInventory);
-
-function itemInventory(e){
 let inventoryList = [];
+function itemInventory(e){
+
 //Declared an empty array
 
 //To let the output retain
@@ -63,16 +63,26 @@ inventoryList.push(itemList);
 document.querySelector('form').reset();
 
 console.log('added' , {inventoryList} );
+var text ="";
 let pre = document.querySelector('#list pre')
 for (let x = 0; x<inventoryList.length; x++){
-	pre.append(`Item Name: ${inventoryList[x].Item_Name} , Stock: ${inventoryList[x].Stock}, Price: ${inventoryList[x].Price} `, '\n')
+	text+=`Item Name: ${inventoryList[x].Item_Name} , Stock: ${inventoryList[x].Stock}, Price: ${inventoryList[x].Price} `+ '\n';
 }
-
+pre.innerText = (text);
 console.log(inventoryList[0].Stock* inventoryList[0].Price);
-var sum;
-var product;
+var sum=0;
+var totalPrice=[];
+var text2="";
+let tally = document.querySelector('#tally pre')
+document.getElementById('calculate').onclick = function(){
+	for( var x in inventoryList){
 
+		product = (inventoryList[x].Stock)*(inventoryList[x].Price);
+		text2 += `${inventoryList[x].Item_Name} will have a total value of ${calculate}. <br>`;
 
+	}
+	sum+=calculate;
+	tally.innerText = (text2);
 }
 
-
+}
