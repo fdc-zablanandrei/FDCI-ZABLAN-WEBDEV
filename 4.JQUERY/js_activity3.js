@@ -23,14 +23,13 @@ let pre = document.querySelector('#msg pre');
 pre.innerHTML=JSON.stringify(nameList);
 
 
-
+var text = "";
 let readable = document.querySelector('#read pre');
 for (let x = 0; x<nameList.length; x++){
-	if( x ===0 || x == (nameList.length-1)){
-		readable.append(`Name: ${nameList[x].Name} , Age: ${nameList[x].Age} `, '\n');
-	} else {
-		return false;
+	    
+		text += (`Name: ${nameList[x].Name} , Age: ${nameList[x].Age} `, '\n');
 	}
+	readable.HTML(nameList);
 }
 /*for (let x = 0; x<nameList.length; x++){
 	if(x == 0 || x == (nameList.length-1)){
@@ -38,7 +37,7 @@ for (let x = 0; x<nameList.length; x++){
 		+ Object.keys(nameList[x])[1] + " : " + nameList[x].Age + "<br>";
 	} */
 
-}
+
 
 
 
