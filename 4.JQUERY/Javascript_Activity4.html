@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" href="../2.HTML/bootstrap/css/bootstrap.css">
-	<title>JavaScript Activity 3</title>
+	<title>JavaScript Activity 4</title>
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-inverse">
@@ -21,58 +21,81 @@
 				</ul>
 			</div>
 		</nav>
-		<section class="container">
-			<form class="form" id="form1" name="inputform">
+		<div id="validationspace">
+			
+		</div>
+		<form class="form container" id="form1" name="inputform">
+			<section class="container">
+
 				<div class="form-row">
 					<label for="name">What is your Name?</label>
 					<input type="text" name="name" id="userName" class="inputfield form-control" placeholder="Enter you Name">
 					<label for="gender">Gender</label>
-					<select class="form-group">
+					<select id="gender" class="btn btn-default dropdown-toggle form-control" style="margin-bottom: 10px;">
 						<option value="Male">Male</option>
 						<option value="Female">Female</option>
 						<option value="Others">Others</option>
 					</select>
-				</section>
-				<section>
-					<div class="container" id="hobbylist">
-						<div class="form-group" id="hobby_table">
-							<label>Hobbies</label>
-							<p>Select at least 3</p>
-							<div class="checkbox" onclick="" name="hobbyitem">
-								<label><input type="checkbox" value="Singing">Reading</label>
-							</div>
-							<div class="checkbox" onclick="" name="hobbyitem">
-								<label><input type="checkbox" value="Dancing">Playing Sports</label>
-							</div>
-							<div class="checkbox" onclick="" name="hobbyitem">
-								<label><input type="checkbox" value="Traveling">Video Gaming</label>
-							</div>
-							
-							<button id="add_list" type="button" class="btn btn-info btn-sm">Add Hobby</button>
+				</div>
 
+			</section>
+
+
+			<section>
+				<div class="container" id="hobbylist">
+					<div class="form-group" id="hobby_table">
+						<label>Hobbies</label>
+						<p>Select at least 3</p>
+						<div class="checkbox" onclick="" name="hobbyitem">
+							<label><input type="checkbox" value="Reading">Reading</label>
 						</div>
+						<div class="checkbox" onclick="" name="hobbyitem">
+							<label><input type="checkbox" value="Playing Sports">Playing Sports</label>
+						</div>
+						<div class="checkbox" onclick="" name="hobbyitem">
+							<label><input type="checkbox" value="Video Gaming">Video Gaming</label>
+						</div>
+
+
+
+
 					</div>
-				</section>
-
-				<section class="container">
-					<div class="form-group">
-						<label>Tell me something about yourself.</label>
-						<div>
-							<textarea class="form-control" rows="5" id="comment" maxlength="20" ></textarea>
-							<div id="counter">
-								<span id="current">0</span>
-								<span id="maximum">/ 20</span>
-							</div>
-							<button  id="submit" type="button" class="btn btn-success btn-sm">Submit</button>
-						</div>		
+					<div class="container" id="textToHobby" style="display: none; margin-bottom: 10px;">
+						<input type="text" name="textNewHobby" class="form-control" id="texto">
 					</div>
-				</section>
+					<div>
+						<button id="add_list" type="button" class="btn btn-info btn-sm" onclick="newHobby()">Add Hobby</button>
+					</div>
+				</div>
+			</section>
 
+			<section class="container">
+				<div class="form-group">
+					<label>Tell me something about yourself.</label>
+					<div>
+						<textarea class="form-control" rows="5" id="comment" maxlength="20" onkeyup="countChecker()"></textarea>
+						<div id="counter">
+							<span id="current">0</span>
+							<span id="maximum">/ 20</span>
+						</div>
 
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-				<script type="text/javascript" src="js_activity4.js"></script>
-				<script type="text/javascript" src="../2.HTML/bootstrap/js/jquery.js"></script>
-				<script type="text/javascript" src="../2.HTML/bootstrap/js/bootstrap.js"></script>
-			</body>
-			</html>
+					</div>		
+				</div>
+			</section>
+			<button  id="submit" type="button" class="btn btn-success btn-sm">Submit</button>
+		</form>
+		<div id="displayProfile" style="display:none;" class="alert alert-info">
+			<span id="displayProfileInfo"></span>
+			<br>
+			<div class="input-group col-md-12">
+				<button type="button" class="btn btn-info" id="goOver" onclick="goOver()">Go Over</button>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script type="text/javascript" src="js_activity4.js"></script>
+		<script type="text/javascript" src="../2.HTML/bootstrap/js/jquery.js"></script>
+		<script type="text/javascript" src="../2.HTML/bootstrap/js/bootstrap.js"></script>
+	</body>
+	</html>
