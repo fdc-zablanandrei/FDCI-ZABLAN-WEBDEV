@@ -35,12 +35,6 @@ function newHobby(){
 
 			}
 
-
-
-
-
-
-
 			function goOver() {
 				profiles = document.getElementById("displayProfile");
 				profileInput = document.getElementById("form1");
@@ -49,39 +43,40 @@ function newHobby(){
 			}
 
 			var profileForm = document.getElementById("form1");
-
-			profileForm.addEventListener('submit', function(event) {
-
+			let myHobbies = []; 
+			function displayProfInfo(event){
+				
 				event.preventDefault();
-
 				errorMessage = document.getElementById('validationspace');
 
-				name = document.getElementById('name').value;
+				name = document.getElementById('userName').value;
 				gender = document.getElementById('gender').value;
-				hobbyitems = document.querySelectorAll('.checkbox:checked');
+				/*hobbyitems = document.querySelectorAll('.checkbox:checked');*/
+				hobbyitems = $('input:checkbox[name=hobbyitem]:checked');
 				aboutMe = document.getElementById('comment').value;
 
-				myHobbies = new Array(); 
-
+				console.log(hobbyitems);
+				
 				for (i = 0; i < hobbyitems.length; i++) {
 					myHobbies.push(hobbyitems[i].value);
 				}
-
+				console.log(myHobbies);
 				var profile = {
 					Name: name,
 					Gender: gender,
-					Hobbies: hobbyitems,
+					Hobbies: myHobbies,
 					About: aboutMe 
 				};
 
-				checkObject = getText(form1);
+				/*checkObject = getText(form1);
 
 				if (checkObject) {
 					displayErrorMessage(checkObject);
 					message="";
 				}
 
-				else {
+				else {*/
+					
 					profiles = document.getElementById("displayProfile");
 					profileInput = document.getElementById("form1");
 					profiles.style.display = "block";
@@ -89,12 +84,12 @@ function newHobby(){
 					
 					for (key in form1) {
 
-						document.getElementById('displayProfileInfo').innerHTML = "Hi " + "<strong>" +form1.name + "</strong>" + "<br>" + "Your gender is " + "<strong>" + profile.Gender + "</strong>" + "<br>" + "Your hobbies are " + profile.Hobbies + "<br>" + "Here's a little fact about yourself: " + profile.About;
-					}
+						document.getElementById('showProfileSummary').innerHTML = "Hi " + "<strong>" +profile.Name + "</strong>" + "<br>" + "Your gender is " + "<strong>" + profile.Gender + "</strong>" + "<br>" + "Your hobbies are " + profile.Hobbies + "<br>" + "Here's a little fact about yourself: " + profile.About;
+/*					}*/
 				}
-			});
+			};
 
-			function displayErrorMessage(errorMessage) {
+/*			function displayErrorMessage(errorMessage) {
 
 				var titleDiv = document.getElementById("lblProfile");
 
@@ -130,5 +125,5 @@ function newHobby(){
 					}
 				}
 
-			}
+			}*/
 

@@ -47,7 +47,7 @@
 						<label>Hobbies</label>
 						<p>Select at least 3</p>
 						<div class="checkbox" onclick="" name="hobbyitem">
-							<label><input type="checkbox" value="Reading">Reading</label>
+							<label><input type="checkbox" value="Reading" checked>Reading</label>
 						</div>
 						<div class="checkbox" onclick="" name="hobbyitem">
 							<label><input type="checkbox" value="Playing Sports">Playing Sports</label>
@@ -73,7 +73,7 @@
 				<div class="form-group">
 					<label>Tell me something about yourself.</label>
 					<div>
-						<textarea class="form-control" rows="5" id="comment" maxlength="20" onkeyup="countChecker()"></textarea>
+						<textarea class="form-control" rows="5" id="comment" maxlength="20" onkeydown="countChecker()"></textarea>
 						<div id="counter">
 							<span id="current">0</span>
 							<span id="maximum">/ 20</span>
@@ -82,10 +82,10 @@
 					</div>		
 				</div>
 			</section>
-			<button  id="submit" type="button" class="btn btn-success btn-sm">Submit</button>
+			<button  id="submit" type="button" class="btn btn-success btn-sm" onclick="displayProfInfo(event)">Submit</button>
 		</form>
-		<div id="displayProfile" style="display:none;" class="alert alert-info">
-			<span id="displayProfileInfo"></span>
+		<div id="displayProfile" style="display:none;" class="alert alert-info container">
+			<span id="showProfileSummary"></span>
 			<br>
 			<div class="input-group col-md-12">
 				<button type="button" class="btn btn-info" id="goOver" onclick="goOver()">Go Over</button>
